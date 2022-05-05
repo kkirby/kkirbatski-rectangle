@@ -70,6 +70,8 @@ export enum ScaleMode {
 
 	/// \brief Match the target rectangle's position and dimensions.
 	STRETCH_TO_FILL = 3,
+
+	FIT_NO_ENLARGE = 4,
 }
 
 interface Vec2 {
@@ -357,7 +359,15 @@ export default class Rectangle {
 				AlignHorz.CENTER,
 				AlignVert.CENTER,
 			);
-		} else if (scaleMode === ScaleMode.FILL) {
+		} else if (scaleMode === ScaleMode.FIT_NO_ENLARGE) {
+			return this.scaleToAspect(
+				targetRect,
+				AspectRatioMode.KEEP_NO_ENLARGE,
+				AlignHorz.CENTER,
+				AlignVert.CENTER,
+			);
+		}
+		else if (scaleMode === ScaleMode.FILL) {
 			return this.scaleToAspect(
 				targetRect,
 				AspectRatioMode.KEEP_BY_EXPANDING,
