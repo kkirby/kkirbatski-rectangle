@@ -15,8 +15,8 @@
     "LICENSE",
     "README.md"
   ],
-  "main": "lib/rectangle.js",
-  "types": "lib/rectangle.d.ts",
+  "main": "lib/Rectangle.js",
+  "types": "lib/Rectangle.d.ts",
   "scripts": {
     "test": "jest",
     "prebuild": "rimraf lib",
