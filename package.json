@@ -1,6 +1,6 @@
 {
   "name": "@kkirbatski/rectangle",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A port of OpenFrameworks Rectangle class.",
   "publishConfig": {
     "access": "public"
@@ -15,8 +15,8 @@
     "LICENSE",
     "README.md"
   ],
-  "main": "dist/rectangle.js",
-  "types": "dist/rectangle.d.ts",
+  "main": "lib/rectangle.js",
+  "types": "lib/rectangle.d.ts",
   "scripts": {
     "test": "jest",
     "prebuild": "rimraf lib",
