@@ -1,6 +1,6 @@
 {
   "name": "@kkirbatski/rectangle",
-  "version": "1.0.4",
+  "version": "2.0.0",
   "description": "A port of OpenFrameworks Rectangle class.",
   "publishConfig": {
     "access": "public"

@@ -79,7 +79,7 @@ interface Vec2 {
 	y: number;
 }
 
-export default class Rectangle {
+export class Rectangle {
 	x: number;
 	y: number;
 	width: number;
