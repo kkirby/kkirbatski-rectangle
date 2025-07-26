@@ -326,7 +326,7 @@ export class Rectangle {
 					let hRatio = Math.abs(th) / Math.abs(sh);
 					if (aspectRatioMode === AspectRatioMode.KEEP_BY_EXPANDING) {
 						this.scale(Math.max(wRatio, hRatio));
-					} else if (aspectRatioMode === AspectRatioMode.KEEP || AspectRatioMode.KEEP_NO_ENLARGE) {
+					} else if (aspectRatioMode === AspectRatioMode.KEEP || aspectRatioMode === AspectRatioMode.KEEP_NO_ENLARGE) {
 						this.scale(Math.min(wRatio, hRatio));
 					}
 				}
