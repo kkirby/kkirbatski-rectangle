@@ -543,7 +543,7 @@ export class Rectangle {
 	}
 
 	insideXY(x: number, y: number): boolean {
-		return x > this.minX && y > this.minY && x < this.maxX && y < this.maxX;
+		return x > this.minX && y > this.minY && x < this.maxX && y < this.maxY;
 	}
 
 	insideVec2(vec: Vec2): boolean {
