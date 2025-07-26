@@ -321,7 +321,7 @@ export class Rectangle {
 			aspectRatioMode === AspectRatioMode.KEEP_NO_ENLARGE
 		) {
 			if(aspectRatioMode !== AspectRatioMode.KEEP_NO_ENLARGE || (sw > tw || sh > th)){
-				if (Math.abs(sw) >= Number.EPSILON || Math.abs(sh) >= Number.EPSILON) {
+				if (Math.abs(sw) >= Number.EPSILON && Math.abs(sh) >= Number.EPSILON) {
 					let wRatio = Math.abs(tw) / Math.abs(sw);
 					let hRatio = Math.abs(th) / Math.abs(sh);
 					if (aspectRatioMode === AspectRatioMode.KEEP_BY_EXPANDING) {
